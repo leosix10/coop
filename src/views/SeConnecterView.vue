@@ -48,7 +48,7 @@ function validationFormulaire() {
                     </div>
                 </div>
             </form>
-            <router-link to="/creer-un-compte">Créer un compte</router-link>
+            <router-link to="/creer-un-compte" class="button">Créer un compte</router-link>
 
 
         </div>

@@ -39,7 +39,7 @@ onMounted(() => {
         <article ref="messageElement" class="media">
             <figure class="media-left">
                 <p class="image is-64x64">
-                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6716/6716646.png">
                 </p>
             </figure>
             <div class="media-content">

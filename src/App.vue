@@ -62,4 +62,7 @@ function demarrer() {
 html {
   scroll-behavior: smooth;
 }
+.navbar{
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
 </style>

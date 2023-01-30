@@ -2,7 +2,6 @@
 import { ref, onMounted, inject } from 'vue';
 import { useMembresStore } from '@/stores/membres'
 
-// const membresStore = inject('membres');
 const membresStore = useMembresStore();
 
 
@@ -11,11 +10,26 @@ const membresStore = useMembresStore();
 <template>
   <main>
     <h2 class="title">Liste des membres</h2>
-    <ul>
-      <li class="box" v-for="membre in membresStore.state.membres">
+    <ul class="columns">
+      <li class="column is-12-mobile is-6-tablet is-4-desktop box" v-for="membre in membresStore.state.membres">
+        <img src="https://cdn-icons-png.flaticon.com/512/6716/6716646.png" alt="" width="64" height="64">
           <h2 class="title is-3">{{ membre.fullname }}</h2>
           <p class="subtitle">{{ membre.email }}</p>
       </li>
     </ul>
   </main>
 </template>
+<style scoped>
+
+ul{
+  flex-wrap: wrap;
+}
+li:last-of-type{
+  margin-bottom: 1.5rem;
+}
+img{
+  float: left;
+  margin-right: 1em;
+}
+
+</style>

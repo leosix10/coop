@@ -1,5 +1,4 @@
 <script setup>
-//import TheWelcome from '../components/TheWelcome.vue'
 
 import { reactive, onMounted, inject } from 'vue';
 
@@ -25,11 +24,10 @@ if (session.isValid()) {
     <!--    <TheWelcome />-->
     <h2 class="title">Liste des conversations</h2>
     <p class="subtitle">
-      <router-link to="/creer-conversation">Créer une nouvelle conversation
-      </router-link>
+      <router-link to="/creer-conversation" class="button is-primary">Créer une nouvelle conversation</router-link>
     </p>
-    <ul>
-      <li class="box" v-for="channel in state.channels">
+    <ul class="columns">
+      <li class="column is-12-mobile is-6-tablet is-4-desktop box" v-for="channel in state.channels">
         <router-link :to="{ name: 'conversation', params: { id: channel.id } }">
           <h2 class="title is-3">{{ channel.topic }}</h2>
           <p class="subtitle">{{ channel.label }}</p>
@@ -39,11 +37,18 @@ if (session.isValid()) {
   </main>
 </template>
 <style scoped>
+
+ul{
+  flex-wrap: wrap;
+}
+li:last-of-type{
+  margin-bottom: 1.5rem;
+}
 .box {
-  transition: background .5s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
 .box:hover {
-  background-color: rgba(0, 255, 179, 0.3);
+  background-color: rgba(0, 255, 255, 0.3);
 }
 </style>

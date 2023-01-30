@@ -43,7 +43,7 @@ export const useSessionStore = defineStore('session', () => {
    * Si la session n'est pas valide, on rediriger vers la page de connexion
    */
   async function isValid() {
-    console.log('🍎 Pouvons nous afficher la liste des conversations ?');
+    console.log('Afficher la liste des conversations ?');
 
     /**
      * La route courante est "ouverte" 

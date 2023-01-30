@@ -35,8 +35,8 @@ function envoyerMessage() {
                 <input class="input" placeholder="Rédigez votre message ici" v-model="message">
             </div>
             <div class="control">
-                <button class="button">
-                    📨
+                <button class="button is-primary">
+                    Envoyer
                 </button>
             </div>
         </div>

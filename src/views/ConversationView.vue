@@ -19,7 +19,6 @@ let state = reactive({
 });
 
 async function chargerMessages() {
-    // state.messages = [];
     const response = await api.get(`channels/${route.params.id}/posts?token=${session.data.token}`);
     state.messages = response.reverse();
     setTimeout(() => bus.emit('fin-recharger-messages'), 10);
@@ -32,10 +31,8 @@ async function chargerConversation() {
 
 }
 onMounted(() => {
-    // if (session.isValid()) {
     chargerConversation();
     chargerMessages();
-    // }
 });
 </script>
 <template>
