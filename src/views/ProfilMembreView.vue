@@ -4,7 +4,6 @@ import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { ref } from 'vue';
 
-// const membresStore = inject('membres');
 const membresStore = useMembresStore();
 const router = useRouter();
 
