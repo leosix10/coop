@@ -12,9 +12,11 @@ const membresStore = useMembresStore();
     <h2 class="title">Liste des membres</h2>
     <ul class="columns">
       <li class="column is-12-mobile is-6-tablet is-4-desktop box" v-for="membre in membresStore.state.membres">
-        <img src="https://cdn-icons-png.flaticon.com/512/6716/6716646.png" alt="" width="64" height="64">
+        <router-link :to="{ name: 'membre', params: { id: membre.id } }">
+          <img src="https://cdn-icons-png.flaticon.com/512/6716/6716646.png" alt="" width="64" height="64">
           <h2 class="title is-3">{{ membre.fullname }}</h2>
           <p class="subtitle">{{ membre.email }}</p>
+        </router-link>
       </li>
     </ul>
   </main>
