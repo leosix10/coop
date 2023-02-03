@@ -1,6 +1,8 @@
-# coop
+# TD Co'op
 
 TD Vue.js
+Accéder au lien : https://leo-six-coop.netlify.app/
+Léo Six
 
 ## Customize configuration
 

@@ -4,8 +4,8 @@ const router = inject('router');
 const session = inject('session');
 
 let member = reactive({
-    email: 'leone@gmail.com',
-    password: 'leone10140'
+    email: '',
+    password: ''
 })
 
 function validationFormulaire() {
