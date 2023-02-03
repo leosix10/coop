@@ -24,7 +24,7 @@ if (session.isValid()) {
     <!--    <TheWelcome />-->
     <h2 class="title">Liste des conversations</h2>
     <p class="subtitle">
-      <router-link to="/creer-conversation" class="button is-primary">Créer une nouvelle conversation</router-link>
+      <router-link to="/creer-conversation" class="button is-link">Créer une nouvelle conversation</router-link>
     </p>
     <ul class="columns">
       <li class="column is-12-mobile is-6-tablet is-4-desktop box" v-for="channel in state.channels">
@@ -49,6 +49,6 @@ li:last-of-type{
 }
 
 .box:hover {
-  background-color: rgba(0, 255, 255, 0.3);
+  background-color: rgba(32, 156, 238, 0.3);
 }
 </style>

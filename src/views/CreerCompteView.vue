@@ -50,7 +50,7 @@ function validationFormulaire() {
 
                 <div class="field is-grouped">
                     <p class="control">
-                        <button class="button is-primary">Créer un compte</button>
+                        <button class="button is-link">Créer un compte</button>
                     </p>
                     <p class="control">
                         <router-link to="/se-connecter" class="button">Annuler</router-link>

@@ -44,7 +44,7 @@ function validationFormulaire() {
 
                 <div class="field is-grouped">
                     <p class="control">
-                        <button class="button is-primary">Ajouter une conversation</button>
+                        <button class="button is-link">Ajouter une conversation</button>
                     </p>
                     <p class="control">
                         <router-link to="/" class="button">Annuler</router-link>

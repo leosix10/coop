@@ -19,7 +19,7 @@ function logOut() {
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <router-link to="/" class="navbar-item">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/chat-2639493-2187526.png" height="28">
+                <img src="/logo_coop.png" height="40">
             </router-link>
 
             <button role="button" class="navbar-burger" @click="state.menuOuvert=!state.menuOuvert">
@@ -45,7 +45,7 @@ function logOut() {
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <button @click="logOut" class="button is-danger">
+                        <button @click="logOut" class="button">
                             <strong>Se déconnecter</strong>
                         </button>
                     </div>
